@@ -6,6 +6,7 @@ var C = 100;
 var D = 500;
 var M = 1000;
 var output = [];
+var str = "I"
 
 
 
@@ -13,19 +14,21 @@ $(document).ready(function() {
   $("form#roman-numeral").submit(function(event) {
     var userInput = $("input#numberInput").val();
 
-    if (userInput > 3999) {
-      alert("Please enter an integer less than 4000")
+  //   if (userInput > 3999) {
+  //     alert("Please enter an integer less than 4000")
+  //
+  // }
 
-  } else {
-      // alert("Thanks")
-      }
+      if (userInput < 4 && userInput > 0) {
+        var ones = str.repeat(userInput);
+        alert(ones)
+    } else if
+      (userInput > 4 && userInput < 9) {
+        var fiveeight = (userInput-5);
 
-    if (userInput < 4 && userInput > 0) {
-      var str = "I"
-      var outputted = str.repeat(userInput);
-      alert(outputted)
-    };
-
+        var fives = str.repeat(fiveeight);
+        alert("V"+fives)
+      };
       // "I".repeat(userInput);
       //   ("I" += "I" + userInput);
       //   userInput++;
