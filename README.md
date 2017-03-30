@@ -26,7 +26,6 @@ _{Are there issues that have not yet been resolved that you want to let users kn
 
 | behavior |  input   |  output  |
 |----------|:--------:|:--------:|
-
 | The program counts only up to 3,999 | 4,000 | False |
 | The program adds up the value all of the symbols | 2 | II |
 | The program changes symbols when there is more than three of the same characters in a row | 4 | IV |
