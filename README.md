@@ -27,7 +27,15 @@ _{Are there issues that have not yet been resolved that you want to let users kn
 | behavior |  input   |  output  |
 |----------|:--------:|:--------:|
 | The program counts only up to 3,999 | 4,000 | False |
+| The program calculates I=>1, V=>5, X=>10, L=>50, C=>100, D=>500, M=>1000 | 50 | L |
 | The program converts input number to corresponding symbols | 4 | IV |
+| The program evaluates each inputted digit from right to left | 2543 | [3, 40, 500, 2000]
+| If the last digit = 1-3, it returns that quantity of I's | 2 | II |
+| If the last digit = 1 number lower than a roman numeral, it returns 1 I before that roman numeral | 4, 9 | IV, IX |
+| If the last digit = 5-8, it returns that roman numeral and the remainder in I's | 5, 6 | V, VI |
+| The program performs similar actions as those above for the second to last digit as it does for the last one | 20 | XX |
+| The program performs similar actions as those above for the third to last digit as it does for the last one | 200 | CC |
+| The program returns the quantity of M's in the fourth to last position | 3,000 | MMM |
 | The program changes symbols when there is more than three of the same characters in a row | 4 | IV |
 | The program switches to subtraction when there is more than three of the same characters in a row | 90 | XC |
 | The program separates ones, tens, hundreds, and thousands | 99 | XCIX |
