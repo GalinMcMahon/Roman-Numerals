@@ -25,11 +25,10 @@ $(document).ready(function() {
         var ones = str1.repeat(onePosition);
         // alert(ones)
 
-      } else if
-          (onePosition > 4 && onePosition < 9) {
-            var fiveeight = (onePosition-5);
-            var fives = str1.repeat(fiveeight);
-            var ones = ("V"+fives)
+      } else if (onePosition > 4 && onePosition < 9) {
+          var fiveeight = (onePosition-5);
+          var fives = str1.repeat(fiveeight);
+          var ones = ("V"+fives)
 
       } else if (onePosition == 4) {
           var ones = ("IV")
@@ -37,14 +36,13 @@ $(document).ready(function() {
       } else if (onePosition == 9) {
           var ones = ("IX")
       } else if (onePosition == 0) {
-        var ones = ("")
+          var ones = ("")
       }
-      // } else {
-      //   alert("")
-      // }
 
-      if (userInput === onePosition) {
-        alert (ones)
+      if (userInput == 0) {
+        alert("Somehow the Romans missed the most importand number there is.  You have outwitted the Romans.  For now, please enter 1-3,999")
+      } else if (userInput === onePosition) {
+        alert(ones)
       } else
 
       // TEN POSITION
@@ -65,22 +63,14 @@ $(document).ready(function() {
     } else if (twoPosition == 9) {
         var twos = ("XC")
         alert(twos+ones)
-    } else {
-      alert("Please enter 1-9")
     }
+    // else {
+    //   alert("Please enter 1-3999")
+    // }
 
-    if (userInput === twoPosition) {
-      alert (twos+ones)
-    } else
-
-
-
-
-
-
-
-
-
+    // if (userInput === twoPosition) {
+    //   alert (twos+ones)
+    // }
 
 
       // var numberLength = (userInput.length);
